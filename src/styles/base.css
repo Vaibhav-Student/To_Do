@@ -1,0 +1,45 @@
+/* 
+ * Base Styles - Reset, Variables, and Global Styles
+ * This file contains foundational styles for the application
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Emoji support for all text elements */
+.todo-text,
+.form-input,
+.tag-input,
+.tag-chip,
+.todo-tag,
+.list-name,
+.list-name-input {
+    font-family: inherit;
+    unicode-bidi: plaintext;
+}
+
+/* App Container - Full Screen Layout */
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
